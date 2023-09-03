@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FIndMeARoomate.Models
+namespace FIndMeARoomate.DataLayer.Models
 {
-    internal class Anouncement
+    public class Anouncement
     {
-        public int Id { get; set; }
+        [Key]
+        [Required]
+        public int ID { get; set; }
 
         [Required]
         public string Title { get; set; }

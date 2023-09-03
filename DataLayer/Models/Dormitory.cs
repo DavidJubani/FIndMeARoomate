@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FIndMeARoomate.Models
+namespace FIndMeARoomate.DataLayer.Models
 {
-    internal class DormitoryStudent
+    public class Dormitory
     {
         public int ID { get; set; }
 
-        public Student StudentID { get; set; }
+        public string Adress { get; set; }
 
-        public Dormitory DormitoryID { get; set; }
+        public int Capacity { get; set; }
     }
 }
